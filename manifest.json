@@ -1,0 +1,58 @@
+{
+  "manifest_version": 3,
+  "name": "Tab Master - Organize suas abas",
+  "version": "1.0.0",
+  "description": "Organize suas abas com workspaces, economize memória e aumente sua produtividade",
+  "permissions": [
+    "tabs",
+    "tabGroups",
+    "storage",
+    "system.memory"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "commands": {
+    "save-quick-session": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+S",
+        "mac": "Command+Shift+S"
+      },
+      "description": "Salvar sessão rápida"
+    },
+    "switch-workspace-1": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+1",
+        "mac": "Command+Shift+1"
+      },
+      "description": "Alternar para Workspace 1"
+    },
+    "switch-workspace-2": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+2",
+        "mac": "Command+Shift+2"
+      },
+      "description": "Alternar para Workspace 2"
+    },
+    "clean-tabs": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+D",
+        "mac": "Command+Shift+D"
+      },
+      "description": "Limpar abas (mantém fixadas)"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
